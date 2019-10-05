@@ -14,13 +14,21 @@ public class FileCreator {
 	// Files
 	public static File File_de_DE = new File(var.K_File_de_DE);
 	public static File File_en_EN = new File(var.K_File_en_EN);
+	public static File InternalFile = new File(var.InternFile);
 
-	public FileCreator() {
+	public static void InternFile() {
+
+		if (!InternalFile.exists()) {
+
+			try {
+				InternalFile.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		}
 
 	}
-	
-	
-	
 
 	public static void MainFolder() {
 
@@ -87,5 +95,6 @@ public class FileCreator {
 		}
 
 	}
+
 
 }

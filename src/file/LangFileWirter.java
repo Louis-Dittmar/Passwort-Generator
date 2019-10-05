@@ -17,6 +17,8 @@ public class LangFileWirter {
 
 		try {
 			XMLEncoder o = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(var.K_File_de_DE)));
+			
+			
 
 			o.close();
 		} catch (FileNotFoundException e) {

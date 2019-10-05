@@ -2,6 +2,9 @@ package frame;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+
+import main.var;
+
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Label;
@@ -53,20 +56,13 @@ public class MasterPasswortVergessen {
 		btnNewButton.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				
-				/* Passwort Zurücksetzen hier Einfügen
+
+				/*
+				 * Passwort Zurücksetzen hier Einfügen
 				 * 
 				 * 
 				 */
-				
-				
-				
-				
-				
-				
-				
-				
-				
+
 			}
 		});
 		btnNewButton.setBounds(458, 316, 118, 30);
@@ -84,8 +80,7 @@ public class MasterPasswortVergessen {
 
 		Label lblHinweis = new Label(shell, SWT.NONE);
 		lblHinweis.setBounds(10, 10, 566, 300);
-		lblHinweis.setText(
-				"Hinweis:\r\nAlle Passw\u00F6rter die in diesem Programm gespeichert wurden\r\nwerden mit dem Klicken \r\nauf Best\u00E4digen unwiderufich Gel\u00F6scht  ");
+		lblHinweis.setText(var.PasswortVergesen);
 
 	}
 
