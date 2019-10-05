@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true">  
-  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+<class-diagram version="1.2.3" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="main" project="Passwort-Verwaltung" file="/Passwort-Verwaltung/src/main" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="122" x="50" y="37"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="main.MainClass" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/main/MainClass.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="130" x="222" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="main.var" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/main/var.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="286" width="235" x="227" y="527"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="file.FileCreator" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/file/FileCreator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="232" width="140" x="227" y="255"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="file.LangFileWirter" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/file/LangFileWirter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="146" x="41" y="255"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="frame.JavaFileChooser" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/frame/JavaFileChooser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="144" x="407" y="255"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="frame.InstalliatonFrame" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/frame/InstalliatonFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="178" width="148" x="403" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
     <operations public="true" package="true" protected="true" private="true" static="true"/>  

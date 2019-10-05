@@ -4,10 +4,9 @@ public class var {
 
 	// file
 	public static String PasswortMainFolderLocation = "", PasswortMainFolderName = "Passwort-Verwatlung";
-	public static String FolderLangName = "language";
+	public static String FolderLangName = "language", ProjectName = "Passwort Verwaltung";
 	public static String FileGer = "de_DE", FileEng = "en_EN";
-
-
+	public static String VorläufigeFolderLocation = "";
 	
 	
 	
