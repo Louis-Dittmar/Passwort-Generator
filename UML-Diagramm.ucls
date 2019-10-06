@@ -1,193 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <package id="1" language="java" name="main" project="Passwort-Verwaltung" file="/Passwort-Verwaltung/src/main" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="55" width="122" x="1266" y="941"/>    
+  <class id="1" language="java" name="org.passwort.main.Main" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/org/passwort/main/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="130" x="253" y="244"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="2" language="java" name="org.passwort.main" project="Passwort-Verwaltung" 
+    file="/Passwort-Verwaltung/src/org/passwort/main" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="153" x="145" y="504"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <class id="2" language="java" name="main.MainClass" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/main/MainClass.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="106" width="130" x="41" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="main.var" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/main/var.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="376" width="235" x="433" y="941"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="file.FileCreator" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/file/FileCreator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="268" width="140" x="251" y="273"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="file.LangFileWirter" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/file/LangFileWirter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="124" width="146" x="44" y="273"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="frame.InstalliatonFrame" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/frame/InstalliatonFrame.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="148" x="598" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <package id="7" language="java" name="org.eclipse.wb.swt" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/org/eclipse/wb/swt" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="55" width="155" x="1306" y="273"/>    
-    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <class id="8" language="java" name="org.eclipse.wb.swt.SWTResourceManager" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/org/eclipse/wb/swt/SWTResourceManager.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="628" width="568" x="473" y="273"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <package id="9" language="java" name="frame" project="Passwort-Verwaltung" file="/Passwort-Verwaltung/src/frame" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="55" width="122" x="1123" y="37"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="10" language="java" name="file" project="Passwort-Verwaltung" file="/Passwort-Verwaltung/src/file" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="55" width="122" x="1123" y="273"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <class id="11" language="java" name="frame.FrameResetPasswort" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/frame/FrameResetPasswort.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="175" x="908" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="file.MainFileWirter" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/file/MainFileWirter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="106" width="158" x="211" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="13" language="java" name="frame.FramePasswort" project="Passwort-Verwaltung" 
-    file="/Passwort-Verwaltung/src/frame/FramePasswort.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="149" x="409" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <dependency id="14">    
-    <bendpoint x="1092" y="273"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="16">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="17">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="18">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <dependency id="19">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="20">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
-  </dependency>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="22">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="23">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="24">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="25">    
-    <bendpoint x="1071" y="273"/>    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="27">    
-    <bendpoint x="220" y="273"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="29">    
-    <bendpoint x="1275" y="273"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="30">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="31">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="32">    
-    <bendpoint x="442" y="273"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="33">    
-    <bendpoint x="421" y="273"/>    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
