@@ -132,9 +132,8 @@ public class FramePasswortGenerator {
 		JButton btnCopy = new JButton("Copy");
 		btnCopy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(
-			               new StringSelection(PasswortField.getText()), null
-			          );
+				Toolkit.getDefaultToolkit().getSystemClipboard()
+						.setContents(new StringSelection(PasswortField.getText()), null);
 			}
 		});
 		btnCopy.setBounds(468, 183, 97, 25);
@@ -150,6 +149,5 @@ public class FramePasswortGenerator {
 	public static void setPasswortFieldText() {
 		PasswortField.setText(PasswortCreator.Passwort);
 	}
-	
-	
+
 }
