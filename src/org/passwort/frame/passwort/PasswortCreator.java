@@ -35,6 +35,7 @@ public class PasswortCreator {
 		if (FramePasswortGenerator.BoxG.isSelected() || FramePasswortGenerator.BoxK.isSelected()
 				|| FramePasswortGenerator.BoxN.isSelected() || FramePasswortGenerator.BoxNull.isSelected()
 				|| FramePasswortGenerator.BoxS.isSelected()) {
+			// tet
 
 			SecureRandom random = new SecureRandom();
 			StringBuilder pass = new StringBuilder(length);
@@ -42,19 +43,17 @@ public class PasswortCreator {
 				pass.append(FIN.charAt(random.nextInt(FIN.length())));
 			}
 			Passwort = pass + "";
-			FramePasswortGenerator.setPasswortFieldText();
+			FramePasswortGenerator.PasswortField.setText(pass + "");
+
 		} else {
-
 			FIN = FIN + G + K + N + Null + S;
-
 			SecureRandom random = new SecureRandom();
 			StringBuilder pass = new StringBuilder(length);
 			for (int i = 0; i < length; i++) {
 				pass.append(FIN.charAt(random.nextInt(FIN.length())));
 			}
 			Passwort = pass + "";
-			FramePasswortGenerator.setPasswortFieldText();
-
+			FramePasswortGenerator.PasswortField.setText(pass + "");
 		}
 
 	}

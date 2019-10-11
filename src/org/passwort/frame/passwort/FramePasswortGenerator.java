@@ -1,5 +1,6 @@
 package org.passwort.frame.passwort;
 
+import java.awt.Dialog.ModalExclusionType;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Label;
@@ -15,35 +16,37 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.passwort.frame.JFrameLook;
 import org.passwort.main.var;
-import java.awt.Dialog.ModalExclusionType;
 
 public class FramePasswortGenerator {
 
-	private JFrame frmTet;
-	public static JTextField textField;
-	public static JTextField PasswortField;
 	public static JCheckBox BoxG;
 	public static JCheckBox BoxK;
 	public static JCheckBox BoxN;
 	public static JCheckBox BoxNull;
 	public static JCheckBox BoxS;
+	public static JTextField PasswortField;
+	public static JFrame ShellPF;
 	public static JSlider slider;
+	public static JTextField textField;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+			@Override
 			public void run() {
 				new JFrameLook();
 				try {
+					@SuppressWarnings("unused")
 					FramePasswortGenerator window = new FramePasswortGenerator();
-					window.frmTet.setVisible(true);
+					FramePasswortGenerator.ShellPF.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -62,94 +65,93 @@ public class FramePasswortGenerator {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frmTet = new JFrame();
-		frmTet.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
-		frmTet.setIconImage(Toolkit.getDefaultToolkit()
+		ShellPF = new JFrame();
+		ShellPF.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
+		ShellPF.setIconImage(Toolkit.getDefaultToolkit()
 				.getImage(FramePasswortGenerator.class.getResource("/pictures/passwort-48.png")));
-		frmTet.setType(Type.POPUP);
-		frmTet.setTitle(var.ProjectName);
-		frmTet.setBounds(100, 100, 595, 292);
-		frmTet.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmTet.getContentPane().setLayout(null);
+		ShellPF.setType(Type.POPUP);
+		ShellPF.setTitle(var.ProjectName);
+		ShellPF.setBounds(100, 100, 595, 292);
+		ShellPF.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+		ShellPF.getContentPane().setLayout(null);
 
 		JButton btnPasswortG = new JButton("Passwort Generieren");
 		btnPasswortG.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				new PasswortCreator();
 			}
 		});
 		btnPasswortG.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnPasswortG.setBounds(12, 13, 251, 26);
-		frmTet.getContentPane().add(btnPasswortG);
+		ShellPF.getContentPane().add(btnPasswortG);
 
 		slider = new JSlider();
+		slider.setMaximum(114);
 		slider.setValue(12);
 		slider.setMinimum(4);
-		slider.setMaximum(64);
 		slider.setBounds(12, 57, 210, 26);
-		frmTet.getContentPane().add(slider);
+		ShellPF.getContentPane().add(slider);
 
 		JLabel LableLenght = new JLabel("12");
 		LableLenght.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		LableLenght.setBounds(233, 57, 67, 26);
-		frmTet.getContentPane().add(LableLenght);
+		ShellPF.getContentPane().add(LableLenght);
 
 		BoxG = new JCheckBox("Gro\u00DFbuchstaben");
 		BoxG.setBounds(12, 92, 166, 25);
-		frmTet.getContentPane().add(BoxG);
+		ShellPF.getContentPane().add(BoxG);
 
 		BoxK = new JCheckBox("Kleinbuchstaben");
 		BoxK.setBounds(12, 122, 166, 25);
-		frmTet.getContentPane().add(BoxK);
+		ShellPF.getContentPane().add(BoxK);
 
 		BoxN = new JCheckBox("Nummern");
 		BoxN.setBounds(12, 152, 166, 25);
-		frmTet.getContentPane().add(BoxN);
+		ShellPF.getContentPane().add(BoxN);
 
 		BoxNull = new JCheckBox("Nullen");
 		BoxNull.setBounds(182, 92, 194, 25);
-		frmTet.getContentPane().add(BoxNull);
+		ShellPF.getContentPane().add(BoxNull);
 
 		BoxS = new JCheckBox("Sonderzeichen");
 		BoxS.setBounds(182, 122, 194, 25);
-		frmTet.getContentPane().add(BoxS);
+		ShellPF.getContentPane().add(BoxS);
 
 		textField = new JTextField();
 		textField.setText(",.:-_#+~<>!\u00A7$%&(){}=?@");
 		textField.setBounds(186, 153, 190, 22);
-		frmTet.getContentPane().add(textField);
+		ShellPF.getContentPane().add(textField);
 		textField.setColumns(10);
 
 		Label label = new Label("Dein Passwort: ");
 		label.setBounds(12, 183, 97, 24);
-		frmTet.getContentPane().add(label);
+		ShellPF.getContentPane().add(label);
 
 		PasswortField = new JTextField();
 		PasswortField.setColumns(10);
 		PasswortField.setBounds(12, 213, 553, 22);
-		frmTet.getContentPane().add(PasswortField);
+		ShellPF.getContentPane().add(PasswortField);
 
 		JButton btnCopy = new JButton("Copy");
 		btnCopy.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(
-			               new StringSelection(PasswortField.getText()), null
-			          );
+				Toolkit.getDefaultToolkit().getSystemClipboard()
+						.setContents(new StringSelection(PasswortField.getText()), null);
 			}
 		});
+		
 		btnCopy.setBounds(468, 183, 97, 25);
-		frmTet.getContentPane().add(btnCopy);
+		ShellPF.getContentPane().add(btnCopy);
 
 		slider.addChangeListener(new ChangeListener() {
+			@Override
 			public void stateChanged(ChangeEvent arg0) {
 				LableLenght.setText(slider.getValue() + "");
 			}
 		});
+
 	}
 
-	public static void setPasswortFieldText() {
-		PasswortField.setText(PasswortCreator.Passwort);
-	}
-	
-	
 }
