@@ -1,30 +1,12 @@
 package org.passwort.main;
 
+import org.passwort.frame.passwort.FramePasswortGenerator;
+
 public class Main {
 
 	public static void main(String[] args) {
-
-		if (var.MasterPasswortExists = true) {
-
-			if (var.MasterPasswortStatus = true) {
-
-			} else {
-				
-				
-				
-				
-				
-				
-				
-
-			}
-
-		} else {
-			
-			
-
-		}
-
+		new FramePasswortGenerator();
+		FramePasswortGenerator.main(null);;
 	}
 
 }

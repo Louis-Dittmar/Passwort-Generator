@@ -46,6 +46,7 @@ public class FramePasswortGenerator {
 				try {
 					@SuppressWarnings("unused")
 					FramePasswortGenerator window = new FramePasswortGenerator();
+
 					FramePasswortGenerator.ShellPF.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -65,6 +66,7 @@ public class FramePasswortGenerator {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+
 		ShellPF = new JFrame();
 		ShellPF.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
 		ShellPF.setIconImage(Toolkit.getDefaultToolkit()
@@ -141,7 +143,7 @@ public class FramePasswortGenerator {
 						.setContents(new StringSelection(PasswortField.getText()), null);
 			}
 		});
-		
+
 		btnCopy.setBounds(468, 183, 97, 25);
 		ShellPF.getContentPane().add(btnCopy);
 
@@ -153,5 +155,4 @@ public class FramePasswortGenerator {
 		});
 
 	}
-
 }

@@ -35,7 +35,6 @@ public class PasswortCreator {
 		if (FramePasswortGenerator.BoxG.isSelected() || FramePasswortGenerator.BoxK.isSelected()
 				|| FramePasswortGenerator.BoxN.isSelected() || FramePasswortGenerator.BoxNull.isSelected()
 				|| FramePasswortGenerator.BoxS.isSelected()) {
-			// tet
 
 			SecureRandom random = new SecureRandom();
 			StringBuilder pass = new StringBuilder(length);
