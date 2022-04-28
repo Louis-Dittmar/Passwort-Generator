@@ -2,8 +2,9 @@ package org.passwort.main;
 
 public class var {
 
-	public static String ProjectName = "Passwort Verwaltung";
-	
+	public static String ProjectName = "Passwort Generator";
+
+
 	public static boolean MasterPasswortStatus = true, MasterPasswortExists = true ;
 	public static String MasterPass = null;
 

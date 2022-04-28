@@ -5,30 +5,37 @@ import java.io.IOException;
 
 public class FileCreator {
 
-	public static File DataFolder = new File("src/data");
-	public static File MasterFile = new File("src/data/Master.xml");
+    /***
+     * Diese Datei wird nicht mehr benötigt, da das Projekt nie fertiggestellt wurde.
+     *
+     *
+     *
+     */
 
-	public static void CreateDataFolder() {
+    public static File DataFolder = new File("src/data");
+    public static File MasterFile = new File("src/data/Master.xml");
 
-		if (!DataFolder.exists()) {
+    public static void CreateDataFolder() {
 
-			DataFolder.mkdirs();
-		}
+        if (!DataFolder.exists()) {
 
-	}
+            DataFolder.mkdirs();
+        }
 
-	public static void MasterCreator() {
+    }
 
-		if (!MasterFile.exists()) {
+    public static void MasterCreator() {
 
-			try {
-				MasterFile.createNewFile();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+        if (!MasterFile.exists()) {
 
-		}
+            try {
+                MasterFile.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
-	}
+        }
+
+    }
 
 }

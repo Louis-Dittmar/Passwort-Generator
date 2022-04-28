@@ -5,25 +5,15 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 public class JFrameLook {
 
-	public JFrameLook() {
+    public JFrameLook() {
 
-		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException e) {
-			
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			
-			e.printStackTrace();
-		} catch (UnsupportedLookAndFeelException e) {
-			
-			e.printStackTrace();
-		}
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException | UnsupportedLookAndFeelException | InstantiationException |
+                 IllegalAccessException e) {
 
-		return;
-	}
+            e.printStackTrace();
+        }
+    }
 
 }
